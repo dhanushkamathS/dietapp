@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Bodoni-Bold.ttf",
+      "sha1": "2c93e384bbe920e935a850111a2bb2a2b60d8f7f"
+    },
+    {
+      "path": "assets/fonts/Bodoni-Bolditalic.ttf",
+      "sha1": "0ad798966ded5d2c444890644bba5c34caf660e3"
+    },
+    {
+      "path": "assets/fonts/Bodoni-Italic.ttf",
+      "sha1": "862bad41f8b15fcac2a0d6136d06ab071932399d"
+    },
+    {
+      "path": "assets/fonts/BodoniflfRoman-vmAD.ttf",
+      "sha1": "dc9c6c2d84f6e1166443c4de5404151e92a9ed2c"
+    },
+    {
+      "path": "assets/fonts/EncodeSansCondensed-Bold.ttf",
+      "sha1": "95369d2931ef8409686ff6d59276ac947665909a"
+    },
+    {
+      "path": "assets/fonts/EncodeSansCondensed-Regular.ttf",
+      "sha1": "744ab9ef435adbc121622a0bb711f2df24aea43f"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Bold.ttf",
+      "sha1": "d8ef530a8112a01351f05dcac24145231f6f2d42"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Regular.ttf",
+      "sha1": "cde31cd8c30fca7e341fdecf73b3b7a9ed1b6afc"
+    }
+  ]
+}
