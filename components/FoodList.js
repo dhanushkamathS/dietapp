@@ -49,7 +49,7 @@ const DisplayComp = ({Icons,colors,name,navigation,foodType,foodData})=>{
                             <Pressable onPress={()=>{navigation.navigate('FoodScreen',{foodType})}}>
                                <Icon as={IonicIcons} name="add-circle-outline" size={8} color="black"/>
                             </Pressable>
-                            <Text>{caloriesConsumed} kcal</Text>
+                            <Text>{parseInt(caloriesConsumed)} kcal</Text>
                         </VStack>
                     </HStack>
                         <VStack >

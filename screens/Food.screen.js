@@ -24,8 +24,12 @@ const AddFoodScreen = ({route, navigation }) => {
 
       useEffect(() => {
         if(isSuccess){
-          setFilteredDataSource(response?.data?.data ?? [])
-          setMasterDataSource(response?.data?.data ?? [])
+          const data = response?.data?.data ?? []
+          data.sort((a, b) => a.name.localeCompare(b.name));
+          setFilteredDataSource(data)
+          setMasterDataSource(data)
+          console.log(data)
+         
         }
   }, [isSuccess]);
     
