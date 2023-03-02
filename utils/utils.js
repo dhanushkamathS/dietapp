@@ -1,3 +1,5 @@
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
 export  const CalorieCalculator = (value,carb,fat,protein) => {
     const newCarb = (carb*value)/100
     const newFat = (fat*value)/100
@@ -15,3 +17,21 @@ export const emailValidator = (email) => {
     console.log(val)
     return val
 }
+
+export const storeUserId = async (id)=>{
+    try {
+        await AsyncStorage.setItem('userId', id)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export const getStoredId = async () => {
+    try {
+         const jsonValue = await AsyncStorage.getItem('userId')
+        
+        return jsonValue != null ? jsonValue : null;
+    } catch (error) {
+            console.log(error)
+        }
+    }

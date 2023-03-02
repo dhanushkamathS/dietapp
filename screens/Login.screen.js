@@ -12,12 +12,12 @@ import {
   Dimensions,
   TouchableOpacity
 } from 'react-native';
-import { emailValidator } from '../utils/utils';
+import { emailValidator,storeUserId } from '../utils/utils';
 import { getUserId } from '../utils/GetFoodData';
 import Background from '../resource/images/background.jpg'
 const { width, height } = Dimensions.get('window')
 import { UserContext } from '../contextStore/UserContext';
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 
@@ -27,13 +27,14 @@ const  LoginScreen= () => {
 
     const mutation = getUserId()
     const [userId,setUserId] = useContext(UserContext)
-    const [username,setUsername] = useState("")
+    const [username,setUsername] = useState("dhanush")
 
     useEffect(()=>{
 
       if(  mutation.isSuccess  && mutation?.data?.data?.user?.length === 1){
-        console.log(mutation?.data?.data?.user[0]._id)
+        console.log(mutation?.data?.data)
         setUserId(mutation?.data?.data?.user[0]._id)
+        storeUserId(mutation?.data?.data?.user[0]._id)
       }
     },[mutation.isSuccess])
     
@@ -42,6 +43,7 @@ const  LoginScreen= () => {
         username:username.toLowerCase()
       }
       mutation.mutate(data)
+      // console.log("click")
     }
 
   

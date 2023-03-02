@@ -94,7 +94,7 @@ const DbFoodScreen = ({navigation}) => {
             <Box  justifyContent="center">
                 <Box bgColor="green.400" w={width*0.25} h={width*0.25} borderRadius="full" justifyContent="center" alignItems="center">
                   <Box bgColor="white" w={width*0.22} h={width*0.22} borderRadius="full" justifyContent="center" alignItems="center" >
-                    <Text fontWeight="bold">{calories}</Text>
+                    <Text fontWeight="bold">{parseInt(calories)}</Text>
                     <Text fontSize="xs">Calories</Text>
                   </Box>
                 </Box>
@@ -103,21 +103,21 @@ const DbFoodScreen = ({navigation}) => {
               <Box  justifyContent="center">
                 <Text>Carbs</Text>
                 <Box bgColor="orange.400" w={width*0.1} h={width*0.1} borderRadius="full" justifyContent="center" alignItems="center">
-                  <Text fontSize="xs" color="white">{carb}g</Text>
+                  <Text fontSize="xs" color="white">{parseInt(carb)}g</Text>
                 </Box>
               </Box>
 
               <Box  justifyContent="center">
                 <Text>Fat</Text>
                 <Box bgColor="pink.500" w={width*0.1} h={width*0.1} borderRadius="full" justifyContent="center" alignItems="center">
-                  <Text fontSize="xs" color="white">{fat}g</Text>
+                  <Text fontSize="xs" color="white">{parseInt(fat)}g</Text>
                 </Box>
               </Box>
 
               <Box justifyContent="center">
                 <Text>Protein</Text>
                 <Box bgColor="purple.600" w={width*0.1} h={width*0.1} borderRadius="full" justifyContent="center" alignItems="center">
-                  <Text fontSize="xs" color="white">{protein}g</Text>
+                  <Text fontSize="xs" color="white">{parseInt(protein)}g</Text>
                 </Box>
               </Box>
             </HStack>
