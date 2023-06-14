@@ -1,6 +1,6 @@
 import { useQuery,useMutation,useQueryClient } from 'react-query'
 import axios from 'axios'
-const BASE_URI = "https://dietbackend.vercel.app/"
+const BASE_URI = "add your backend link here"
 // const BASE_URI = "https://dietappbackend.herokuapp.com"
 import { UserContext } from '../contextStore/UserContext'
 
